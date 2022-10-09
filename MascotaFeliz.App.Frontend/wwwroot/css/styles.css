@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    *padding: 0;
+    box-sizing: border-box;
+  }
+/*______index_________*/
+  .text-center img {
+    padding-bottom: 150px;
+    padding-top: -250px;
+  }
+
+/*______listado propietarios_________*/
+  
+.listado_propietarios a {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #B5B2B2;
+    color: black;
+    border: none;    
+}
+
+/*______agregar o editar dueños_________*/
+
+.editar_dueño button{
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #B5B2B2;
+    color: black;
+    border: none; 
+}
+
+/*______listado mascotas_________*/
+.lista_mascotas a {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #B5B2B2;
+    color: black;
+    border: none;    
+}
+
+/*______agregar o editar mascotas_________*/
+
+.editar_mascota button{   
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #B5B2B2;
+    color: black;
+    border: none; 
+}
+
+/*______listado veterinarios_________*/
+
+.lista_veterinarios a {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #B5B2B2;
+    color: black;
+    border: none;
+}
+
+/*______agregar o editar veterinario_________*/
+
+.editar_veterinario button {
+    
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #B5B2B2;
+    color: black;
+    border: none; }
+

@@ -1,0 +1,48 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ListaMascotasModel
+@{
+}
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="~/css/styles.css">
+</head>
+<body>
+
+<div class="lista_mascotas">
+    <h1>Listado de Mascotas</h1>
+    <table class="table">
+        <tr>
+            <th>Nombre</th>
+            <th>Color</th>
+            <th>Nombre Dueño</th>
+
+        </tr>
+        @foreach (var mascota in Model.listaMascotas)
+        {
+            <tr>
+                <td>@mascota.Nombre</td>
+                <td>@mascota.Color</td>
+                <td>
+                    <a class="btn btn-primary table-btn" asp-page="./DetallesMascotas" asp-route-mascotaId="@mascota.Id">
+                        Detalle Mascota 🔎
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-primary table-btn" asp-page="./EditarMascotas" asp-route-mascotaId="@mascota.Id">
+                        Editar Mascota 🖋️
+                    </a>
+                </td>
+                
+            
+                
+            </tr>
+        }
+    </table>
+    <a class = "btn btn-primary table-btn" asp-page="./EditarMascotas" class="btn-default">Adicionar Mascotas ➕</a>
+</div>
+</body>
+</html>
